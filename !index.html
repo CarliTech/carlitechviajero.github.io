@@ -1,4 +1,4 @@
-<!DOCTYPE pagina web carli Tech>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -38,7 +38,7 @@ nav a:hover{opacity:1;text-decoration:underline}
 }
 .btn:hover{background:#c90024}
 .btn.secondary{background:#1b1b1b;box-shadow:inset 0 0 0 1px rgba(255,0,47,.35)}
-.btn.secondary:hover{background:#6c1b1b}
+.btn.secondary:hover{background:#141414}
 
 section{max-width:1200px;margin:auto;padding:40px 20px}
 h2{margin-bottom:18px}
@@ -74,6 +74,28 @@ hr{border:none;border-top:1px solid rgba(255,255,255,.12);margin:12px 0}
   font-weight:bold;
 }
 
+/* ✅ NUEVO: Galería de videos */
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.video-card{
+  background:#151515;
+  padding:14px;
+  border-radius:14px;
+  box-shadow:0 0 15px rgba(255,0,47,.22);
+}
+.video-card h3{color:#ff002f;margin:8px 0 10px}
+.video-card video{
+  width:100%;
+  height:240px;
+  border-radius:12px;
+  background:#111;
+  display:block;
+  object-fit:cover;
+}
+
 footer{
   background:#0f0f0f;text-align:center;padding:22px;
   opacity:.72
@@ -95,6 +117,7 @@ footer{
     <a href="#inicio">Inicio</a>
     <a href="#rp">Roleplay</a>
     <a href="#stream">Streaming</a>
+    <a href="#videos">Clips</a>
     <a href="#redes">Redes</a>
   </nav>
 </header>
@@ -149,6 +172,32 @@ footer{
   </div>
 </section>
 
+<!-- ✅ NUEVO: Galería de clips -->
+<section id="videos">
+  <h2>🎬 Galería de Video Clips</h2>
+  <p class="small">Reemplazá los <b>src</b> por tus links directos a .mp4 o archivos locales (ej: <b>clips/clip1.mp4</b>).</p>
+
+  <div class="video-grid">
+    <div class="video-card">
+      <video controls preload="metadata" src="clips/clip1.mp4"></video>
+      <h3>🔥 Clip 1</h3>
+      <p class="small">Poné acá el nombre del clip (ej: “Persecución en la city”).</p>
+    </div>
+
+    <div class="video-card">
+      <video controls preload="metadata" src="clips/clip2.mp4"></video>
+      <h3>🚗 Clip 2</h3>
+      <p class="small">Poné acá el nombre del clip (ej: “Taller Redline a full”).</p>
+    </div>
+
+    <div class="video-card">
+      <video controls preload="metadata" src="clips/clip3.mp4"></video>
+      <h3>🎥 Clip 3</h3>
+      <p class="small">Si querés más clips, duplicás esta tarjeta.</p>
+    </div>
+  </div>
+</section>
+
 <section id="redes">
   <h2>📱 Redes</h2>
   <div class="cards links">
@@ -162,6 +211,14 @@ footer{
       <p><a href="https://kick.com/CarliTech" target="_blank" rel="noopener">kick.com/CarliTech</a></p>
       <a class="btn" href="https://kick.com/CarliTech" target="_blank" rel="noopener">Abrir Kick</a>
     </div>
+
+    <!-- ✅ NUEVO: Discord -->
+    <div class="card">
+      <h3>💬 Discord</h3>
+      <p><a href="https://discord.gg/pTDh8GYrNR" target="_blank" rel="noopener">discord.gg/pTDh8GYrNR</a></p>
+      <a class="btn" href="https://discord.gg/pTDh8GYrNR" target="_blank" rel="noopener">Unirme al Discord</a>
+    </div>
+
     <div class="card">
       <h3>🎮 Server</h3>
       <p><b>El Bajo Roleplay</b></p>
