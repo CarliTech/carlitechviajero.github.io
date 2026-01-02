@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carli Tech | El Bajo Roleplay</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+body{background:#0b0b0b;color:#fff}
+header{background:linear-gradient(90deg,#ff002f,#6b0000);padding:20px;text-align:center}
+header h1{font-size:2.4rem;letter-spacing:1px}
+header p{opacity:.9;margin-top:6px}
+nav{margin-top:12px}
+nav a{color:#fff;margin:0 12px;text-decoration:none;font-weight:bold;opacity:.95}
+nav a:hover{opacity:1;text-decoration:underline}
+
+.hero{
+  background:url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=60") center/cover;
+  padding:80px 20px;
+  text-align:center
+}
+.hero .glass{
+  max-width:900px;margin:auto;padding:28px 18px;border-radius:16px;
+  background:rgba(0,0,0,.55);
+  box-shadow:0 0 30px rgba(255,0,47,.18);
+  backdrop-filter:blur(6px);
+}
+.hero h2{text-shadow:0 0 12px #ff002f;font-size:2.2rem}
+.hero p{margin:14px 0;font-size:1.08rem;opacity:.95}
+
+.btn{
+  display:inline-block;
+  background:#ff002f;border:none;color:#fff;
+  padding:14px 26px;border-radius:10px;
+  font-weight:bold;cursor:pointer;margin:6px;
+  text-decoration:none;
+}
+.btn:hover{background:#c90024}
+.btn.secondary{background:#1b1b1b;box-shadow:inset 0 0 0 1px rgba(255,0,47,.35)}
+.btn.secondary:hover{background:#141414}
+
+section{max-width:1200px;margin:auto;padding:40px 20px}
+h2{margin-bottom:18px}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px
+}
+.card{
+  background:#151515;padding:20px;border-radius:14px;
+  box-shadow:0 0 15px rgba(255,0,47,.22)
+}
+.card h3{color:#ff002f;margin-bottom:10px}
+.card p{opacity:.92;line-height:1.4}
+
+.stream{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px
+}
+iframe{width:100%;height:320px;border:none;border-radius:14px;background:#111}
+.small{font-size:.95rem;opacity:.9}
+hr{border:none;border-top:1px solid rgba(255,255,255,.12);margin:12px 0}
+
+.links a{color:#fff;text-decoration:none}
+.links a:hover{text-decoration:underline}
+.badge{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  background:rgba(255,0,47,.18);
+  box-shadow:inset 0 0 0 1px rgba(255,0,47,.35);
+  font-weight:bold;
+}
+
+footer{
+  background:#0f0f0f;text-align:center;padding:22px;
+  opacity:.72
+}
+@media(max-width:800px){
+  .stream{grid-template-columns:1fr}
+  header h1{font-size:2.1rem}
+  .hero{padding:65px 18px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>CARLI TECH</h1>
+  <p>El Bajo Roleplay • RP & Streaming</p>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#rp">Roleplay</a>
+    <a href="#stream">Streaming</a>
+    <a href="#redes">Redes</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="glass">
+    <h2>Carli Tech en <span class="badge">El Bajo Roleplay</span></h2>
+    <p>Historias de calle, respeto y roleplay real. Streaming con toda la energía.</p>
+    <a class="btn" href="#stream">Ver Stream (Kick)</a>
+    <a class="btn secondary" href="#redes">Ver Redes</a>
+  </div>
+</section>
+
+<section id="rp">
+  <h2>🔥 Roleplay</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🏙️ El Bajo RP</h3>
+      <p>Ciudad intensa, escenas reales y alto nivel de roleplay.</p>
+    </div>
+    <div class="card">
+      <h3>🚗 Calle & Taller</h3>
+      <p>Mecánica, calle y respeto ganado en cada historia.</p>
+    </div>
+    <div class="card">
+      <h3>🎭 Personaje</h3>
+      <p>Carli Tech, viajero del RP: firme, creativo y siempre al frente.</p>
+    </div>
+  </div>
+</section>
+
+<section id="stream">
+  <h2>📺 Streaming (Kick)</h2>
+  <div class="stream">
+    <iframe
+      src="https://player.kick.com/CarliTech"
+      title="Kick stream - CarliTech"
+      allow="autoplay; fullscreen"
+      loading="lazy"></iframe>
+
+    <div class="card">
+      <h3>🕒 Horarios</h3>
+      <p class="small">Podés cambiarlos cuando quieras.</p>
+      <p>Lunes: 20:00 - 23:00</p>
+      <p>Miércoles: 20:00 - 23:00</p>
+      <p>Viernes: 21:00 - 00:00</p>
+      <p>Sábado: 21:00 - 00:00</p>
+      <hr>
+      <p>🟢 Kick: <b>CarliTech</b></p>
+      <a class="btn" href="https://kick.com/CarliTech" target="_blank" rel="noopener">Abrir Kick</a>
+    </div>
+  </div>
+</section>
+
+<section id="redes">
+  <h2>📱 Redes</h2>
+  <div class="cards links">
+    <div class="card">
+      <h3>🎵 TikTok</h3>
+      <p><a href="https://www.tiktok.com/@carlitech4" target="_blank" rel="noopener">tiktok.com/@carlitech4</a></p>
+      <a class="btn" href="https://www.tiktok.com/@carlitech4" target="_blank" rel="noopener">Abrir TikTok</a>
+    </div>
+    <div class="card">
+      <h3>🟢 Kick</h3>
+      <p><a href="https://kick.com/CarliTech" target="_blank" rel="noopener">kick.com/CarliTech</a></p>
+      <a class="btn" href="https://kick.com/CarliTech" target="_blank" rel="noopener">Abrir Kick</a>
+    </div>
+    <div class="card">
+      <h3>🎮 Server</h3>
+      <p><b>El Bajo Roleplay</b></p>
+      <p class="small">Twitch se agrega después si querés.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Carli Tech – El Bajo Roleplay
+</footer>
+
+</body>
+</html>
